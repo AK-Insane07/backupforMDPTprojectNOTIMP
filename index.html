@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MDPT</title>
+        <link rel="stylesheet" href="stylemain.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&display=swap"
+            rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Edu+VIC+WA+NT+Beginner:wght@400..700&display=swap"
+            rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+          
+            @keyframes ani1 {
+                0%{
+                    left:0;
+                    transform: translate(-100%);
+                
+                }
+                100%{
+                    left:100%;
+                    transform: translate(0%);
+                }                
+            }
+            @keyframes ani2 {
+                0%{
+                    opacity: 0;
+                    transform: translateX(-40%);
+                }
+                100%{
+                    opacity: 1;
+                    transform: translateX(0%);
+                }
+            }
+            @keyframes ani3 {
+                0%{
+                    opacity: 0;
+                    transform: translateX(40%);
+                }
+                100%{
+                    opacity: 1;
+                    transform: translateX(0%);
+                }
+            }
+           @media only screen and (max-width:361px),(max-width:394px){
+            .navbar{
+                height: 10vh;
+                display: flex;
+                width: 100vw;
+            }
+
+            .logo_navbar{
+                display: flex;
+                height: 6vh;
+                
+
+            }
+            .menu{
+                width: 100vw;
+                display: flex;
+                position: absolute;
+                left:9%;
+                top: 50%;
+                gap:2;
+                font-size: 9px;
+                padding: 8px;
+            }
+            .video1{
+                width: 100vw;
+                object-fit: cover;
+            }
+            .cont1{
+                top:11% ;
+            }
+            .title1{
+                font-size: 20px;
+                padding-top: 0;padding: 0;
+                
+            }
+            .subtitle_1{
+                font-size: 8px;           
+                width: 26vw; 
+                position: relative;
+                bottom: 12px;         
+                
+            }
+          
+            .para1{
+                width: 95vw;
+                font-size: 7px;
+                position: absolute;
+                bottom: -42px;
+                
+            
+            }
+            .cont2{
+                position: absolute;
+                
+                top:80%;
+                left:4%;
+            }
+            .subtitle2{
+                font-size: 12px;
+                width: 45vw;
+            }
+            .list1{
+                font-size: 8px;
+                width: 95vw;
+                padding-top: 0;
+            }
+            .scroller_img{
+                position: absolute;
+                top: -52%;
+                width: 3vh;
+            }
+           }
+           
+
+           
+
+                
+        </style>
+    </head>
+
+    <body class="bg-black ">
+        <!-- <header>
+        <nav class="navbar flex items-center justify-between p-6 fixed top-0 w-[100vw] border-b-[1px] border-slate-600 z-20">
+            <span class="absolute bottom-0 h-[2px] w-[55px] bg-transparent bg-gradient-to-r from-black to-white animate-[ani1_3s_linear_infinite]"></span>
+            <div class="font-sans text-3xl text-white cursor-pointer logo hover:animate-pulse">MDPT</div>
+            <ul class="flex gap-20 font-medium text-white uppercase menu">
+                <li><a href="#" class="hover:font-bold hover:underline hover:underline-offset-2">About</a></li>
+                <li><a href="#" class="hover:font-bold hover:underline hover:underline-offset-2">MDPT-TOOL</a></li>
+                <li><a href="#" class="hover:font-bold hover:underline hover:underline-offset-2">Contact</a></li>
+                
+            </ul>
+           <div><input type="button" value=""></div>
+        </nav>
+    </header> -->
+
+        <div class="wrapper scroll-smooth">
+
+            <header>
+                <nav id="navbar"
+                    class="navbar md:w-full sm:w-full  flex h-[12vh]  fixed top-0 w-[100vw] border-b-[1px] border-slate-600 z-20">
+                    <span
+                        class="absolute bottom-0 h-[2px] w-[55px] bg-transparent bg-gradient-to-r from-black to-white animate-[ani1_3s_linear_infinite]"></span>
+                    <div
+                        class="font-sans text-3xl text-white cursor-pointer logo hover:animate-pulse "><img
+                            src="logo.png" class="logo_navbar h-[12vh] p-0" alt></div>
+                    <ul id="menu"
+                        class="menu flex gap-20 uppercase font-medium w-[30vw] relative left-[20%]  p-8 text-white">
+                        <li><a href="#"
+                                class="hover:font-bold hover:underline hover:underline-offset-2">About</a></li>
+                        <li><a href="https://modelmdptoption-kanf9ztsw3sgejjcsvvxml.streamlit.app/"
+                                class="hover:font-bold hover:underline hover:underline-offset-2">MDPT-TOOL</a></li>
+                        <li><a href="#"
+                                class="hover:font-bold hover:underline hover:underline-offset-2">Contact</a></li>
+
+                    </ul>
+                    <div><input type="button" value></div>
+                </nav>
+            </header>
+            <section
+                class="video-section w-[100vw] flex-shrink-0 overflow-hidden">
+                <div class="video-container">
+                    <video src="vid1.mp4" autoplay loop muted
+                        class="video1 h-[100vh] w-[100vw] object-cover z-[-2] relative blur-[2px]"></video>
+                        
+                        <div class="absolute  top-[12%] z-[-2] text-white w-[100vw] pg1">
+                            <h1 class="pt-4 text-5xl font-bold title3 font-edu-vic w-[75vw] relative left-2">Understand the Diseases MDPT Can Help You Predict</h1>
+                            <p class="para2 font-edu-vic w-[75vw] relative text-md left-2 pt-4">MDPT (Multiple Diseases Prediction Tool) is designed to empower you with the knowledge to stay ahead of potential health risks. On this page, we dive deeper into the specific diseases our tool can help you predict, how our prediction algorithms work, and why early detection is crucial for your health.</p>
+                            <h1 class="relative text-4xl title4 font-edu-vic left-[42%] top-24 font-semibold underline underline-offset-4 text-[#cb4141] shadow-2xl shadow-black w-[18.1vw]">Diseases We Cover</h1>
+
+
+                            <div class="relative w-[55vw] h-64 mx-auto">
+                                <span class="absolute text-lg font-edu-vic" style="left: 50%; transform: rotate(-45deg) translateX(-50%); transform-origin: 0 100%;">M</span>
+                                <span class="absolute text-lg font-edu-vic" style="left: 55%; transform: rotate(-35deg) translateX(-50%); transform-origin: 0 100%;">D</span>
+                                <span class="absolute text-lg font-edu-vic" style="left: 60%; transform: rotate(-25deg) translateX(-50%); transform-origin: 0 100%;">P</span>
+                                <span class="absolute text-lg font-edu-vic" style="left: 65%; transform: rotate(-15deg) translateX(-50%); transform-origin: 0 100%;">T</span>
+                                <span class="absolute text-lg font-edu-vic" style="left: 70%; transform: rotate(-5deg) translateX(-50%); transform-origin: 0 100%;"> </span>
+                                <span class="absolute text-lg font-edu-vic" style="left: 75%; transform: rotate(5deg) translateX(-50%); transform-origin: 0 100%;">c</span>
+                                <span class="absolute text-lg font-edu-vic" style="left: 80%; transform: rotate(15deg) translateX(-50%); transform-origin: 0 100%;">u</span>
+                                <span class="absolute text-lg font-edu-vic" style="left: 85%; transform: rotate(25deg) translateX(-50%); transform-origin: 0 100%;">r</span>
+                                <span class="absolute text-lg font-edu-vic" style="left: 90%; transform: rotate(35deg) translateX(-50%); transform-origin: 0 100%;">r</span>
+                                <span class="absolute text-lg font-edu-vic" style="left: 95%; transform: rotate(45deg) translateX(-50%); transform-origin: 0 100%;">e</span>
+                                <span class="absolute text-lg font-edu-vic" style="left: 100%; transform: rotate(55deg) translateX(-50%); transform-origin: 0 100%;">n</span>
+                                <span class="absolute text-lg font-edu-vic" style="left: 105%; transform: rotate(65deg) translateX(-50%); transform-origin: 0 100%;">t</span>
+                                <span class="absolute text-lg font-edu-vic" style="left: 110%; transform: rotate(75deg) translateX(-50%); transform-origin: 0 100%;">l</span>
+                                <span class="absolute text-lg font-edu-vic" style="left: 115%; transform: rotate(85deg) translateX(-50%); transform-origin: 0 100%;">y</span>
+                                <span class="absolute text-lg font-edu-vic" style="left: 120%; transform: rotate(95deg) translateX(-50%); transform-origin: 0 100%;"> </span>
+                                <span class="absolute text-lg font-edu-vic" style="left: 125%; transform: rotate(105deg) translateX(-50%); transform-origin: 0 100%;">p </span>
+                                <!-- Continue positioning letters in the same manner -->
+                              </div>
+                              
+                              
+
+                            <!-- <p class="para3 w-[55vw] font-edu-vic relative left-[24%] top-14 text-lg ">MDPT currently provides predictions for a wide range of chronic and serious conditions. Here are some of the key diseases we cover:</p> -->
+
+                            <!-- <div class="relative flex gap-10 top-14 boxesss">
+                            <div class="boxx1 w-[25vw] h-[25vh] border-2 border-white relative left-10">
+                                <h2>Diabetes</h2>
+                                <p><b>Type 2 Diabetes:</b> Understand your risk factors, such as age, weight, family history, and lifestyle, that contribute to the development of type 2 diabetes. Our tool helps you assess your likelihood of developing this condition and provides recommendations for prevention.</p>
+                            </div>
+                            <div class="boxx2 w-[25vw] h-[25vh] border-2 border-white relative left-10">
+                                <h2>Cardiovascular Diseases</h2>
+                            <p><b>Heart Disease:</b> Identify your risk of heart disease by analyzing factors like cholesterol levels, blood pressure, smoking habits, and physical activity. Early detection can lead to lifestyle changes that significantly reduce your risk.
+                                <b>Stroke:</b> Learn about your potential risk for stroke, and get personalized advice on how to lower that risk through diet, exercise, and medical care.</p></div>
+                            <div class="boxx3 w-[25vw] h-[25vh] border-2 border-white relative left-10">
+                                <h2>Kidney Disease</h2>
+                                <p><b>Chronic Kidney Disease (CKD):</b> Assess your kidney health by evaluating your blood pressure, blood sugar levels, and other relevant factors. Early detection of CKD can prevent further kidney damage and improve your overall health outcomes.</p>
+                            </div>
+                        </div> -->
+                    
+                        </div>
+
+                    
+
+                </div>
+                <div class="img-container absolute top-0 h-[100vh] w-[100vw] ">
+                    <img src="window.png" alt
+                        class="img object-cover h-[100%] w-[100%] ">
+                    <div 
+                        class=" cont1 z-20  absolute left-[2%] animate-[ani2_1s_ease-in] top-[20%]">
+                        <h1 class="text-5xl text-white title1 font-open-sans">MDPT</h1>
+                        <span
+                            class="text-2xl text-white uppercase subtitle_1 font-open-sans">Multiple
+                            Disease Prediction Tool</span>
+                        <p
+                            class="para1 text-white font-open-sans relative pt-6  w-[25vw]">At
+                            MDPT, we empower individuals with the ability to
+                            predict potential health risks with ease and
+                            accuracy. Our Multiple Diseases Prediction Tool is
+                            designed to provide you with insights into your
+                            health by analyzing various factors and symptoms.
+                            Whether you're concerned about chronic conditions or
+                            simply want to stay ahead of potential health
+                            issues, MDPT is here to guide you.With just a few inputs, our tool provides you with a comprehensive analysis of potential health risks, helping you take preventive steps and stay ahead of any concerns.</p>
+                    </div>
+                    <div
+                        class="z-20 cont2 absolute font-open-sans  left-[70%] animate-[ani3_1s_ease-in]  top-[20%]">
+                        <h1 class="text-4xl text-white subtitle2">Why Choose MDPT?</h1>
+                        <ul
+                            class="list1 text-white font-open-sans pt-6 list-disc w-[26vw]">
+                            <li>Advanced Prediction Models: We utilize
+                                state-of-the-art algorithms and machine learning
+                                models to analyze your data and predict the
+                                likelihood of various diseases.</li>
+                            <li>User-Friendly Interface: Our platform is
+                                designed with simplicity in mind, making it easy
+                                for anyone to use, regardless of technical
+                                expertise.</li>
+                            <li>Comprehensive Health Insights: MDPT offers
+                                predictions for a wide range of diseases,
+                                helping you understand your health risks and
+                                take proactive measures.</li>
+                            <li>Data Privacy and Security: We prioritize your
+                                privacy. All data entered into MDPT is securely
+                                stored and processed with the highest standards
+                                of confidentiality.</li>
+                        </ul>
+                        <img src="scrollbottom.png" class=" scroller_img absolute z-40 w-[2vw] left-[90%] pt-20 animate-bounce" alt="">
+                    </div>
+                    
+              
+
+                </div>
+
+            </section>
+
+            <section class="sec1 p-[7rem] h-[100vh] w-[100vw] object-cover">
+                <div class="flex gap-32 boxes-container flex-cols">
+                    <div class="box1">
+                        <p class="text-white">Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. Eveniet saepe
+                            molestiae in et, unde voluptates adipisci laboriosam
+                            facere distinctio, ea impedit temporibus laudantium!
+                            Fuga totam sed eveniet odio magni. Quia!</p>
+
+                    </div>
+
+                </section>
+            </div>
+
+        </body>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.5/ScrollTrigger.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+        <script src="index.js"></script>
+
+    </html>
